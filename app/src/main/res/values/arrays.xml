@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listaCuentas1">
+        <item>ES2114650100722030876293</item>
+        <item>ES7100491800052345678901</item>
+        <item>ES1221000123456789012345</item>
+        <item>ES403000000000000000001</item>
+    </string-array>
+
+    <string-array name="listaDinero1">
+        <item>€</item>
+        <item>$</item>
+        <item>¥</item>
+        <item>£</item>
+    </string-array>
+</resources>

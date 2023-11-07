@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/money"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/supLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/topText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicia Sesion"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+
+            android:layout_centerInParent="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/inicSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:text="Ingresa el usuario"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+
+            app:layout_constraintBottom_toBottomOf="@id/supLayout" />
+
+        <EditText
+            android:id="@+id/usuarioInp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Introduce el usuario"
+            app:layout_constraintBottom_toTopOf="@+id/inicSesion"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBott"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        tools:ignore="ExtraText,MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutTop">
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:text="Ingresa la contraseña"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+
+            app:layout_constraintBottom_toBottomOf="@id/supLayout" />
+
+        <EditText
+            android:id="@+id/passwordInp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="Introduce la contraseña"
+            app:passwordToggleEnabled="true"
+            android:inputType="textPassword"
+
+            app:layout_constraintBottom_toTopOf="@+id/inicSesion" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTRAR"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutBott"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SALIR"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutBott"
+        app:layout_constraintStart_toStartOf="@id/btnIniciar"
+
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

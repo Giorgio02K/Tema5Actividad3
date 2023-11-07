@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/person"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Bienvenido 123456"
+            android:textStyle="bold"
+            android:textSize="30dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/layoutMain"
+        android:layout_marginTop="10dp"
+
+
+        >
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:text="POSICION GLOBAL"
+            />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="5dp"
+            android:text="MOVIMIENTOS"
+            />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="5dp"
+
+            android:text="TRANSFERENCIAS"
+
+            />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="5dp"
+            android:text="CAMBIAR CONTRASEÑA"
+            android:layout_gravity="center"
+            
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:gravity="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/layout1"
+        app:layout_constraintTop_toBottomOf="@id/layoutMain"
+        android:layout_marginTop="10dp"
+        >
+
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="22dp"
+            android:text="PROMOCIONES" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="22dp"
+            android:text="CAJEROS" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="22dp"
+            android:text="SALIR"
+
+            />
+    </LinearLayout>
+
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/barraInferior"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="BottomAppBar,MissingConstraints"
+        app:backgroundTint="@color/green">
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:theme="@style/AppTheme.Button"
+            android:background="@drawable/bank"
+            app:layout_constraintBottom_toTopOf="@id/barraInferior"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_gravity="center"
+            tools:ignore="MissingConstraints" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
